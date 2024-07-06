@@ -1,0 +1,309 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* Menu Nav */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 40px;
+    background: url('IMAGENS/nav.png');
+}
+
+
+#logo{
+    height: 70px; /* Ajuste o tamanho do logo conforme necessário */
+    
+}
+#social{
+    float: left;
+    margin-left: 56%;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 5px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;    
+}
+nav ul li a:hover {
+    color: white;
+}
+
+nav .social-icons a {
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 10px;
+}
+nav .social-icons a:hover {
+    color: #ffffff;
+}
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position:relative;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+.main-menu a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    position:relative;
+}
+
+.main-menu a:hover {
+    background-color: #44444400;
+    position:relative;
+}
+
+/* Estilo para o submenu */
+.submenu {
+    display: none;
+    position:absolute;
+    list-style:none;
+    background-color: #0000009c;
+    background: url('IMAGENS/nav.png')
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #000000;
+    position:relative;
+
+}
+
+/* Mostrar o submenu ao passar o mouse sobre o item do menu principal */
+.menu-item:hover .submenu {
+    display:block;
+    position:absolute;
+    text-decoration: none;
+}
+/* Video */
+.fullscreen-video video {
+    width: 100%;
+    object-fit: cover;
+    position: center;   
+}
+
+/* conteudo principal */
+.container {
+    display: flex;
+    padding: 5px;
+    background: url('IMAGENS/fundo.jpg') 
+}
+.container2 {
+    width: 100%;
+    padding-top: px;
+    padding-bottom: 1px;
+    padding-right: 15%;
+    padding-left: 15%;
+    background: url('IMAGENS/fundo.jpg') 
+}
+.sidebar {
+    width: 15%;
+    background-color: rgba(253, 252, 252, 0.781);
+    padding: 20px;
+}
+.sidebar h3{
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content {
+    width: 80%;
+    padding: 50px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.content2 {
+    width: 60%;
+    padding: 50px;
+    margin-left: 20%;
+    background-color: #ffffff;
+    color: #333; 
+}
+
+.content3 {
+    width: 40%;
+    background-color: #ffffff;
+    color: #333;
+    float: left;
+}
+.content4 {
+    width: 30%;
+    background-color: #ffffff;
+    color: #333;
+    float: right;
+}
+.content5 {
+    width: 50%;
+    background-color: #ffffff;
+    color: #333;
+    float: left;
+    margin-right:10px ;
+}
+.content6 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    float: left;
+    margin-right:10px ;
+}
+.content7 {
+    width: 49%;
+    background-color: #ffffff;
+    color: #333;
+    margin-left: 25%;
+}
+.content8 {
+    width: 80%;
+    padding: 50px;
+    background-color: #ffffff;
+    color: #333;
+    margin-left: 11%;
+}
+
+#logoheader{
+    width: 65%;
+    margin-left: 17%;
+}
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content h3 {
+
+    font-size: 1em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content p {
+
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+.content2 h1 {
+
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content2 h2 {
+
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content2 h3 {
+
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content2 p {
+
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+.content8 h1 {
+
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content8 h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content8 h3 {
+
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content8 p {
+
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+#img{
+    margin-left: 32%;
+    max-width: 500px;
+}
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer .social-icons a {
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+footer .social-icons a:hover {
+    color: #ffffff;
+}
